@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shooter</title>
+    <link rel="stylesheet" href="home.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="img">
+        <img src="shooter.png" alt="" />
+      </div>
+      <div class="input-field">
+        <form action="javascript:saveData()" method="post">
+            <input type="text" name="username" id="username" placeholder="Input Username" />
+            <div class="select-level">
+                <select name="" id="level">
+                    <option value="">Select Level</option>
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+            </div>
+      </div>
+      <div class="choose-gun">
+          <div class="gun">
+              <label>
+                  <img src="gun1.png" alt="" width="100px" height="100%" draggable="false"/>
+                  <input type="radio" name="gun" id="gun" value="gun1" checked />
+                </label>
+            <label>
+                <img src="gun2.png" alt="" width="100px" height="100%" draggable="false"/>
+                <input type="radio" name="gun" id="gun" value="gun2" />
+            </label>
+        </div>
+      </div>
+      <div class="choose-target">
+          <label>
+              <img src="target.png" alt="" width="100px" height="100%" draggable="false"/>
+            <input type="radio" name="target" id="target" value="target" checked />
+        </label>
+        <label>
+            <img src="target2.png" alt="" width="100px" height="100%" draggable="false"/>
+            <input type="radio" name="target" id="target" value="target2"/>
+        </label>
+        <label>
+            <img src="target3.png" alt="" width="100px" height="100%" />
+            <input type="radio" name="target" id="target" value="target3"/>
+        </label>
+    </div>
+    <div class="button">
+        <input type="submit" value="Play Game">
+        <button>Instruction</button>
+    </div>
+    </form>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

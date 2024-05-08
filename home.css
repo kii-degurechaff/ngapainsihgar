@@ -1,0 +1,11 @@
+.container {
+    width: fit-content;
+    margin: auto;
+    padding: 10vh 0px;
+}
+
+.container div {
+    width: fit-content;
+    margin: auto;
+    padding: 1vh 0px;
+}

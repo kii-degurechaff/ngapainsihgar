@@ -1,0 +1,45 @@
+body, html{
+    overflow: hidden;
+    width: 100%;
+    min-height: 100%;
+    cursor: none;
+}
+
+#container-target {
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    width: 1000px;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+}
+
+#p1-button {
+    position: absolute;
+}
+
+#head-display {
+    z-index: 1;
+}
+
+.counter {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+
+.cursorBig, .cursorSmall {
+   position: absolute;
+   pointer-events: none;
+}
+
+.cursorBig {
+    bottom: 40%;
+}
+
+.cursorSmall {
+    bottom: 95%;
+    left: -3%;
+}
+
